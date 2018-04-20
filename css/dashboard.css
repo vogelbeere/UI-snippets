@@ -17,18 +17,18 @@
 
 .dashboard-module p
 {
-	font-size: 200%;
+	font-size: 1.5em;
 }
 
 .dashboard-module h2
 {
-	font-size: 170%;
+	font-size: 1.2em;
 	white-space: nowrap;
 }
 
 .dash-column 
 {
-	width: 250px;
+	width: 20%;
 	margin: 0;
 	display: inline-block;
 }
@@ -45,4 +45,6 @@
     background-color: #404041;
     color: #b3d335;
     font-family: Consolas, "Lucida Console", "Segoe UI Semibold", monospace;
+}
+nsole", "Segoe UI Semibold", monospace;
 }

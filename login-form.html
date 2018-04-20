@@ -12,10 +12,14 @@
 	<link rel="stylesheet" type="text/css" href="js/clockpicker-gh-pages/dist/jquery-clockpicker.min.css">
 	<link rel="stylesheet" type="text/css" href="js/clockpicker-gh-pages/assets/css/github.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Tajawal" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
     <header>
-		<h1>UI Snippets</h1>
+		<a id="toggle-navbar"><i class="fa fa-navicon fa-2"></i></a>
+		<h1><a href="/">UI Snippets</a></h1>
 	</header>
   
 
@@ -202,21 +206,28 @@
    <h2>Login form </h2>
     <form action="#" method="post" name="login-form" id="login-form">
 					
-					<div class="box col-five">
-						<label for="username">Username</label><br>
-						<input name="username" id="username" required type="text" maxlength="255">
-						<br>
-						<label for="password">Password</label><br>
-						<input name="password" id="password" required type="password" maxlength="255">
-						<br>
-						<input name="remember-me" id="remember-me" type="checkbox" checked="checked">
-						<label for="remember-me">Remember username</label>
-						<br>
+					
 						
-						<input type="submit" id="submit" name="submit" value="Log in">
-						<br>
-						<a href="#">Forgotten Password</a>
-					</div>
+						<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Log in</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="username">
+                  <label class="mdl-textfield__label" for="sample3">Username</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="password">
+                  <label class="mdl-textfield__label" for="password">Password</label>
+                </div>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                  Log in
+                </a>
+              </div>
+            </div>
 				</form>
     <h3>Notes</h3>
 			<p>Please note that the verb is "to log in" and the noun is "login". Therefore the heading on the login page should be <q><strong>Log in</strong></q>.</p>
@@ -225,13 +236,15 @@
     <span class="footertoplink">
       <a href="#top">Back to top</a>
     </span>
-    <p>
-      <a target="_blank" href="https://www.linkedin.com/in/yvonne-aburrow/">LinkedIn</a> | 
-      <a target="_blank" href="https://twitter.com/yewex">Twitter</a>
-    </p>
+    <ul>
+      <li><a target="_blank" href="https://www.yvonneaburrow.com/">Yvonne Aburrow</a></li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/yvonne-aburrow/">LinkedIn</a></li>
+      <li><a target="_blank" href="https://twitter.com/yewex">Twitter</a></li>
+      <li><a target="_blank" href="https://github.com/vogelbeere">GitHub</a></li>
+    </ul>
   </footer>
 	
-	<script src="js/js.cookie.js"></script>
+
 	<script src="js/accordiontoggle.js"></script>
 	<script src="js/megamenu.js"></script>
 	<script src="js/lookup-popup.js"></script>

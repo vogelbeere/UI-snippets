@@ -6,11 +6,6 @@
 			$(this).addClass('is-active');
 		}
 	});
-   
-   $('.level1 > a').click(function()	{
-      $('.subnav').hide();
-      $(this).next('.subnav').show();
-	});
 	
 	$('.megamenu').hover(function()	{
 		$('.level1 a').removeClass('is-active');
@@ -23,10 +18,6 @@
 	$('input.long').blur(function()	{
 		$(this).parent().next().find('.helptext').hide();
 	});
-   
-   $('#toggle-navbar').click(function() {
-     $(".navbar").toggle();
-   });
 
 });
 
