@@ -1,0 +1,239 @@
+
+.title
+{
+	font-size: 110%;
+	text-align: left;
+	font-weight: bold;
+	color: #404041;
+	padding: 0.25em;
+	border-bottom: 1px solid #404041;
+	display: block;
+	cursor: pointer;
+	background-color: #dedede; 
+}
+
+.inline
+{
+	display: inline-block;
+}
+
+.is-open:after
+{
+	content: " -";
+}
+
+.is-closed:after
+{
+	content: " +";
+}
+
+.item
+{
+	padding: 0.25em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.row
+{
+	padding: 0.5em;
+  display: table-row;
+  background-color: transparent;
+}
+
+.row label
+{
+	padding: 0.5em;
+	display: table-cell;
+	font-weight: bold;
+	text-align: right;
+}
+
+.center
+{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.right
+{
+	text-align: right;
+	float: right;
+}
+
+.left
+{
+	float: left;
+	text-align: left;
+}
+
+.main div
+{
+/*  border: 1px solid red;*/
+	margin: 0.5em;
+}
+
+.sectioncontent
+{
+	width: 98%;
+}
+
+.page-wrap
+{
+							/* https://css-tricks.com/using-flexbox/ */
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    flex-wrap: wrap;
+ }
+ 
+ /* make divs behave like table-cells */
+ 
+ .table
+ {
+	margin: 0.5em 0 1em 1em;
+	}
+ 
+ .table .item
+ {
+	display: table-cell;
+	padding: 0;
+}
+
+.table .item input,
+.table .item label
+{
+	display: block;
+	margin: 0;
+	padding: 0.25em;
+}
+
+.table .item label
+{
+	background-color: #666;
+	color: #fff;
+	border: 1px solid #ccc;
+}
+
+.th
+{
+	padding: 0.5em;
+	border: 1px solid #222;
+	color: #eee;
+	font-weight: bold;
+	display: table-cell;
+}
+
+input.description
+{
+	width: 25em;
+}
+
+/* concertina sections are closed by default - to make them closed by default, change to display: block */
+.sectioncontent
+{
+	display: block;
+}
+ 
+.required label:after
+{
+	color: red;
+	content: "*";
+}
+
+
+
+/* section with tabs */
+
+ul.tabs
+{
+	margin: 0 0.5em;
+	padding: 0px;
+	list-style: none;
+}
+ul.tabs li
+{
+	color: #eee;
+	display: inline-block;
+	padding: 5px 10px;
+	cursor: pointer;
+	margin: 0 0.1em 0 0;
+	border-radius: 5px 5px 0 0;
+	border-width: 1px 1px 0 1px;
+	border-style: solid;
+	border-color: #666;
+}
+
+ul.tabs li.current
+{
+	color: #222;
+	font-weight: bold;
+}
+
+.tab-content
+{
+	display: none;
+	padding: 15px;
+	margin: 0 0.5em 0.5em 0;
+	border: 1px solid #666;
+}
+
+.tab-content.current{
+	display: inherit;
+	margin-top: -1px;
+}
+
+
+/*
+ * speech bubble (tooltip)
+ */
+ 
+ .expandtt
+ {
+	 left: 25px;
+ }
+
+ .collapsett
+ {
+	 left: 51px;
+ }
+/* container for the tooltip  */
+
+.toolbar
+{
+	background-color: #bad749;
+	padding: 0.5em;
+	margin: 0.5em 0;
+	z-index: 0;
+}
+
+.toolbar .button
+{
+	display: inline-block;
+	z-index: 0;
+}
+
+
+.verbose
+{
+	width: 110px;
+	padding: 0.25em;
+	margin-right: 3em;
+	text-align: center;
+	white-space: nowrap;
+}
+.verbose:hover
+{
+	background-color: #232323;
+	color: #fff;
+	cursor: pointer;
+}
+
+.showtt
+{
+	display: none;
+}

@@ -1,0 +1,74 @@
+.carousel {
+    position: relative;
+    list-style: none;
+}
+
+.carousel > article {
+    position: absolute;
+	margin: 0.5em;
+	padding: 1em;
+}
+
+.carousel > article:not(.active) {
+    display: none;
+}
+  
+.carousel > article.next-in {
+    animation: next-in 0.5s;
+}
+
+.carousel > article.next-out {
+    animation: next-out 0.5s;
+}
+
+.carousel > article.prev-in {
+    animation: prev-in 0.5s;
+}
+
+.carousel > article.prev-out {
+    animation: prev-out 0.5s;
+}
+  
+@keyframes next-in {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes next-out {
+    0% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes prev-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes prev-out {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}

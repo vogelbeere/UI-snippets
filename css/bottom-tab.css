@@ -1,0 +1,95 @@
+
+.slide-wrapper
+{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: transparent;
+}
+
+.slide-controller {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.show-slide-up
+{
+	background-color: #404041;
+	color: #fff;
+	border-radius: 5px 5px 0 0;
+	position: relative;
+	top: 0;
+	margin-left: 2vw;
+    margin-top: 5px;
+	width: 120px;
+	padding: 0.6em;
+	cursor:  pointer;
+	z-index: 1001;
+-webkit-box-shadow: 4px -3px 5px 0px rgba(168,168,168, 0.75);
+-moz-box-shadow:    4px -3px 5px 0px rgba(168,168,168, 0.75);
+box-shadow:         4px -3px 5px 0px rgba(168,168,168, 0.75);
+}
+
+.slide-up
+{
+	display: none;
+	border-top: 2px solid #404041;
+	width: 100%;
+	background-color: #fff;
+	z-index: 1000;
+	position: relative;
+	bottom: 0;
+	-webkit-box-shadow: 0 -3px 5px 0px rgba(168,168,168, 0.65);
+	-moz-box-shadow:    0 -3px 5px 0px rgba(168,168,168, 0.65);
+	box-shadow:         0 -3px 5px 0px rgba(168,168,168, 0.65);
+	
+}
+
+.slide-up .row
+{
+	padding: 0;
+	background-color:  #ccc;
+}
+
+.slide-up .item
+{
+	padding: 0;
+}
+
+.slide-up label
+{
+	text-align: left;
+}
+
+.slide-up input
+{
+	background-color:  #fff;
+}
+
+.selected input
+{
+	background-color:  #ffffcc;
+}
+
+.slide-up .selector
+{
+	padding: 0;
+	text-align: center;
+}
+
+.slide-up .selector a
+{
+	display: block;
+	color: #000;
+}
+
+.slide-up .selected
+{
+	background-color: #ffffcc;
+}
+
+#clone-tool
+{
+	padding: 0.5em 1em;
+}

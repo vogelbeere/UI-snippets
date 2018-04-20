@@ -1,0 +1,109 @@
+
+ main h2, main h3, main h4, main h5, main p, main div, main, body
+{
+	color: #eee !important;
+	background-color: #111 !important;
+}
+
+header 
+{
+	background-color: #fff !important;
+	color: #222 !important;
+}
+
+main a 
+{
+	color: #0099ff;
+	text-decoration: none;
+}
+
+main a:visited
+{
+	color: #cc99ff;
+}
+
+main a:hover
+{
+	color: #fff;
+	text-shadow: 2px 0 1px #ccc;
+	border-bottom: 2px solid #eee;
+}
+
+.colors
+{
+	margin-top: 2.5em;
+}
+
+.swatch 
+{
+	padding: 2.25em 2.75em;
+	margin: 0.5em;
+	border-radius: 2.75em;
+	border: 1px solid #000;
+	box-shadow: 4px 2px 2px #444;
+}
+
+.captions
+{
+	padding: 2.75em 0;
+}
+.caption
+{
+	margin: 0 0.875em;
+	display: inline-block;
+	width: 78px;
+	text-align: center;
+}
+
+.selected
+{ border: 1px solid #fff;}
+
+/* section with tabs */
+
+ul.tabs
+{
+	margin: 0 0.5em;
+	padding: 0px;
+	list-style: none;
+}
+ul.tabs li
+{
+	background: #666 !important;
+	color: #ccc !important;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+	margin: 0 0.1em 0 0;
+	border-radius: 5px 5px 0 0;
+	border-width: 1px 1px 0 1px;
+	border-style: solid;
+	border-color: #666;
+}
+
+ul.tabs li.current
+{
+	background: #111 !important;
+	color: #fff !important;
+	font-weight: bold;
+	border-bottom: 1px solid #111 !important;
+}
+
+.tab-content
+{
+	display: none;
+	background: #111;
+	padding: 15px;
+	margin-left: 0.5em;
+	border: 1px solid #666;
+}
+
+.tab-content.current{
+	display: inherit;
+	margin-top: -1px;
+}rder: 1px solid #666;
+}
+
+.tab-content.current{
+	display: inherit;
+	margin-top: -1px;
+}

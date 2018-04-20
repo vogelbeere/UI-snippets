@@ -1,0 +1,48 @@
+
+/* overview dashboard */
+
+.green { background-color: #b3d335; }
+.yellow { background-color: #FFD700; }
+.orange { background-color: #ffa500; }
+.red { background-color: #ff5050; }
+.none { background-color: transparent; color: transparent !important; }
+
+.dashboard-module
+{
+	padding: 0.5em 1em;
+	margin: 0.3em 0;
+	display: block;
+	text-align: center;
+}
+
+.dashboard-module p
+{
+	font-size: 200%;
+}
+
+.dashboard-module h2
+{
+	font-size: 170%;
+	white-space: nowrap;
+}
+
+.dash-column 
+{
+	width: 250px;
+	margin: 0;
+	display: inline-block;
+}
+
+.dash-column h3
+{
+	background-color: #1d9ad6;
+	color: #fff; 
+	padding: 0.3em;
+	font-size: 150%;
+}
+
+.timer, .timer h2 {
+    background-color: #404041;
+    color: #b3d335;
+    font-family: Consolas, "Lucida Console", "Segoe UI Semibold", monospace;
+}
