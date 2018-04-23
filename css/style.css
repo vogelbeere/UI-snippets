@@ -63,6 +63,10 @@ aside li {
 	display: block;
 	border-bottom: 1px solid #eee;
 }
+
+.caption {
+   font-size: 0.8em; 
+}
 main {
 	display: inline-block;
 	width: 100%;
@@ -78,6 +82,11 @@ main a {
 	color: #2a8fa8;
 	font-weight: bold;
 }
+
+.sitemap ul > li > ul li {
+  list-style-type: square;
+}
+
 a.button {
 	color: #fff !important;
 }
@@ -114,6 +123,10 @@ footer li {
   list-style: none;
   padding: 0.25em 0.5em;
   display: inline-block;
+}
+
+footer li:before {
+  content: "◆ "; 
 }
 
 a.nohighlight:hover, a.nohighlight {

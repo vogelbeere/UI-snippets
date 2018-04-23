@@ -6,6 +6,7 @@
 	<link rel="stylesheet" media="print" href="css/print.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/megamenu.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
 	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.11.4/jquery-ui.min.css">
 	<script src="/js/jquery-1.12.0.js"></script>
 	<script src="/js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
@@ -200,20 +201,128 @@
     </ul>
   </div>
   <main>
-   <h3>Design patterns</h3>
-			<aside class="pullquote">
-			<p>In software engineering, a design pattern is a general reusable solution to a commonly occurring problem within a given context in software design. A design pattern is not a finished design that can be transformed directly into source or machine code.</p>
-				<cite> <a href="https://en.wikipedia.org/wiki/Software_design_pattern" target="_blank">Wikipedia</a></cite>
-			</aside>
-			<p>Every website and web application uses some standard <a href="http://ui-patterns.com" target="_blank" title="User interface design patterns">UI patterns</a> to ease the cognitive load on users. Users don't want to learn a new interface every time they visit a new website. They expect that:</p>
-			<ul>
-				<li>the company logo will be at the top left of the page </li>
-				<li>the company logo will be a link to the home page </li>
-				<li>the search box will be at the top right of the page </li>
-				<li>the menu bar will be near the top of the page </li>
-				<li>a vertical navigation bar will be on the left of the page </li>
-			</ul>
-			<p>More complex design patterns include the <a href="http://ui-patterns.com/patterns/ShoppingCart">shopping cart</a> on an e-commerce site; an <a href="http://ui-patterns.com/patterns/EventCalendar">event calendar</a>, a blog archive, and so on.</p>
+   <h2>
+     Portfolio
+    </h2>
+    <div class="page-wrap">
+      <div class="box col-three">
+        <h3>
+          BrookesID
+        </h3>
+        <img src="https://cdn.glitch.com/823da501-8e71-44ca-8f55-15eee8371e49%2Fbrookesid.png?1524474710819" width="200" alt="BrookesID" desc="Homepage of BrookesID" class="right hover-shadow" onclick="openModal();currentSlide(1)">
+        <div class="caption">
+          <p>
+            Brookes ID is a mobile app which allows students to collect achievements for community, sporting, and volunteering activities.
+          </p>
+          <ul>
+            <li><a href="https://itunes.apple.com/gb/app/brookes-id/id1167937736?mt=8">iOS version</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=uk.ac.brookes.brookesid">Android version</a></li>
+            <li><a href="https://github.com/vogelbeere/badges-app">Code on GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+           
+      <div class="box col-three">
+        <h3>
+          Blue Card
+        </h3>
+        <img src="https://cdn.glitch.com/823da501-8e71-44ca-8f55-15eee8371e49%2Fbluecard.PNG?1524477468128" width="200" alt="Blue Card" desc="Blue card functionality" class="right hover-shadow" onclick="openModal();currentSlide(2)">
+        <div class="caption">
+          <p>
+            The blue card is a JavaScript add-on for Moodle that allows students to flag their work as eligible to be marked under the Dyslexia Marking Guidelines.
+          </p>
+          <ul>
+            <li><a href="https://github.com/vogelbeere/bluecard">Code on GitHub</a></li>
+            <li><a href="https://www.brookes.ac.uk/students/wellbeing/dyslexia-spld/support/blue-marking-cards/">Videos for students</a></li>
+            <li><a href="https://www.brookes.ac.uk/staff/academic/dyslexia-spld-service/marking-work/">Videos for staff</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="box col-three">
+        <h3>
+          Emergency contacts app
+        </h3>
+        <img src="https://cdn.glitch.com/823da501-8e71-44ca-8f55-15eee8371e49%2Fmit.PNG?1524479409836" width="200" alt="MIT contacts" desc="Emergency contacts app" class="right hover-shadow" onclick="openModal();currentSlide(3)">
+        <div class="caption">
+          <p>
+            An offline-first app with PouchDB.
+          </p>
+          <ul>
+            <li><a href="https://github.com/vogelbeere/pouchcontacts">Code on GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+           
+      <div class="box col-three">
+        <h3>
+          Certificates plugin
+        </h3>
+        <img src="https://cdn.glitch.com/823da501-8e71-44ca-8f55-15eee8371e49%2Fcert.PNG?1524480282916" width="200" alt="MIT contacts" desc="Emergency contacts app" class="right hover-shadow" onclick="openModal();currentSlide(4)">
+        <div class="caption">
+          <p>
+            A Moodle plugin in PHP to generate certificates for BrookesID.
+          </p>
+          <ul>
+            <li><a href="https://github.com/vogelbeere/moodle-local_brookesid">Code on GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!--lightbox-->
+    
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="https://cdn.glitch.com/823da501-8e71-44ca-8f55-15eee8371e49%2Fbrookesid.png?1524474710819" alt="BrookesID">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="https://cdn.glitch.com/823da501-8e71-44ca-8f55-15eee8371e49%2Fbluecard.PNG?1524477468128" alt="Blue card">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="https://cdn.glitch.com/823da501-8e71-44ca-8f55-15eee8371e49%2Fmit.PNG?1524479409836" alt="MIT contacts">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="https://cdn.glitch.com/823da501-8e71-44ca-8f55-15eee8371e49%2Fcert.PNG?1524480282916" alt="Certificate">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="https://cdn.glitch.com/823da501-8e71-44ca-8f55-15eee8371e49%2Fbrookesid.png?1524474710819" onclick="currentSlide(1)" alt="BrookesID">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="https://cdn.glitch.com/823da501-8e71-44ca-8f55-15eee8371e49%2Fbluecard.PNG?1524477468128" onclick="currentSlide(2)" alt="Blue card">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="https://cdn.glitch.com/823da501-8e71-44ca-8f55-15eee8371e49%2Fmit.PNG?1524479409836" onclick="currentSlide(3)" alt="MIT contacts">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="https://cdn.glitch.com/823da501-8e71-44ca-8f55-15eee8371e49%2Fcert.PNG?1524480282916" onclick="currentSlide(4)" alt="Certificates plugin">
+    </div>
+  </div>
+</div>
   </main>
   <footer class="clearfix">
     <span class="footertoplink">
@@ -228,16 +337,12 @@
     </ul>
   </footer>
 	
-	
+	<script src="js/lightbox.js"></script>
 	<script src="js/accordiontoggle.js"></script>
 	<script src="js/megamenu.js"></script>
 	<script src="js/lookup-popup.js"></script>
 	<script src="js/show-confirm.js"></script>
 	<script src="js/jquery.timeago.js"></script>
-	<script type="text/javascript" src="js/clockpicker-gh-pages/dist/jquery-clockpicker.min.js"></script>
-		
-	<script type="text/javascript">
-	$('.clockpicker').clockpicker();
-	</script>	
+	<script src="js/captionslideup.js"></script>
 </body>
 </html>
