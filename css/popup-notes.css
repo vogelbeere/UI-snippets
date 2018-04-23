@@ -24,6 +24,7 @@
 }
 
 
+
 .customer-notes h3,
 .support-form h3,
 .subhead
@@ -47,15 +48,18 @@
 }
 
 .support-form p {
-    margin: 0 0.75em !important;
+    margin: 0 auto !important;
 }
 
 .add-message textarea {
-    margin: 0 0.75em !important;
+    margin: 0 auto !important;
+    width: 100%;
+    height: 12em;
 }
 
 .add-message p {
-    margin: 1em !important;
+    margin: 0 auto !important;
+    width: 100%;
 }
 
 .previous-message

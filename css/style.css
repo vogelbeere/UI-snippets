@@ -35,35 +35,22 @@ aside {
 	display: inline-block;
 	width: 13%;
 	padding: 12px;
-	background-color: #404041;
-	color: #fff;
+	background-color: #c9e071;
+	color: #333;
 }
-aside a {
-	padding: 3px !important;
-	color: #fff;
-	text-decoration: none;
-	display: block;
-}
-aside a:hover {
-	padding: 3px;
-	background-color: #b3d335;
-	color: #222;
-	display: block;
-	text-decoration: none;
-}
-aside cite a, aside cite a:hover {
-	display: inline;
-	text-decoration: none;
-}
-aside cite {
-	font-size: 1rem;
-}
+
 aside li {
 	list-style-type: none;
 	display: block;
-	border-bottom: 1px solid #eee;
+  padding: 3px;
+	border-bottom: 1px solid #aaa;
 }
 
+blockquote {
+  margin-left: 3em;
+  background-color: #eee;
+  color: #333;
+}
 .caption {
    font-size: 0.8em; 
 }

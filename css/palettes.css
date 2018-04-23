@@ -11,6 +11,12 @@ header
 	color: #222 !important;
 }
 
+header a:link, header a:hover, header a:active, header a:visited {
+  text-decoration: none;
+  color: #222 !important;
+  cursor: pointer;
+}
+
 main a 
 {
 	color: #0099ff;
@@ -26,6 +32,7 @@ main a:hover
 {
 	color: #fff;
 }
+
 
 .colors
 {
@@ -98,8 +105,7 @@ ul.tabs li.current
 .tab-content.current{
 	display: inherit;
 	margin-top: -1px;
-}rder: 1px solid #666;
-}
+}}
 
 .tab-content.current{
 	display: inherit;

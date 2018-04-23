@@ -5,6 +5,7 @@
 	<link rel="stylesheet" media="screen" href="css/style.css">
 	<link rel="stylesheet" media="print" href="css/print.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" type="text/css" href="css/megamenu.css">
 	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.11.4/jquery-ui.min.css">
 	<script src="/js/jquery-1.12.0.js"></script>
@@ -204,10 +205,10 @@
 		
 		
 		<input type="text" class="order-entry js-initial-focus" id="entry-r1" placeholder="place" tabindex="1">
-		<a class="show-lookup button" href="#" id="popup-r1" tabindex="2"><i class="fa fa-search"></i></a>
+		<button class="show-lookup" id="popup-r1" tabindex="2"><i class="material-icons">search</i></button>
 		<div class="overlay">&nbsp;</div>
 		<div class="lookup-multiselect" id="lookup-r1">
-			<a class="button close-button right">x</a>
+			<button class="close-button right"><i class="material-icons">close</i></button>
 			<form action="#" id="form-r1" name="form-r1" method="post">
 				<input class="checkall" id="checkall" type="checkbox">
 			<label for="checkall" class="narrow">Select all</label>
@@ -218,7 +219,7 @@
 					<input type="checkbox" name="place" id="duss" value="D&uuml;sseldorf" tabindex="3"> <label for="duss">D&uuml;sseldorf</label><br>
 				</p>
 			</form>
-				<a href="#" class="button close-button right" tabindex="4">Use selected</a>
+				<button class="close-button right" tabindex="4">Use selected</button>
 		</div>
 		<p>&nbsp;</p>
 		<h3>Usage</h3>
