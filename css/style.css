@@ -543,29 +543,8 @@ div.table-footer {
 .filter-note {
 	display: none;
 }
-.info-icon {
-	padding: 0.25em 0.51em;
-	margin-right: 0.25em;
-	width: 1.5em;
-	height: 1.5em;
-	font-family: monospace, Courier, "Courier New", Consolas;
-	background-color: #1d9ad6;
-	border-radius: 50%;
-	color: #fff;
-	font-weight: bold;
-}
-.info-icon.error {
-	background-color: red !important;
-}
-.info-icon.warning {
-	background-color: #ccb340 !important;
-}
-.info-icon.running, .info-icon.success {
-	background-color: green !important;
-}
-.info-icon.quiet {
-	background-color: grey !important;
-}
+
+
 a.right {
 	float: right;
 }
@@ -713,22 +692,27 @@ acronym, abbr {
 /* g.	status indicators */
 
 div.message {
-	border: 1px solid #222;
 	padding: 6px;
 	margin: 6px;
+  border: 0;
+  border-radius: 3px;
 }
-div.error, tr.error {
-	background-color: #EC7A7B;
+div.error {
+	background-color: #FFCCCC;
 }
-div.warning, tr.warning {
-	background-color: #ffe051;
+div.warning {
+	background-color: #ffcc00;
 }
-div.normal, tr.normal {
+div.normal {
 	background-color: #d1e485;
 }
 div.success {
-	background-color: #bad749;
+	background-color: #99cc33;
 }
+.message .material-icon {
+  font-size: 1.5em !important;
+}
+
 .alert {
 	color: red;
 	background-color: transparent;
@@ -1125,7 +1109,6 @@ video {
 	top: 12em;
 	left: 35%;
 	width: 30%;
-	display: none;
 	-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 	box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -1134,15 +1117,11 @@ video {
 .confirm-button, .edit-button, .cancel-button, .preview-button {
 	display: inline-block;
 	text-decoration: none;
-	font: bold 12px/12px HelveticaNeue, Arial;
-	padding: 6px 8px;
-	border: 1px solid #dedede;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	border-color: #6f6f6f #595959 #4a4a4a;
 	color: #fff;
-	text-shadow: 0 1px 0 #2e2e2e;
 	-webkit-box-shadow: 0 1px 1px #c8c7c2, inset 0 1px 0 #9d9d9d;
 	-moz-box-shadow: 0 1px 1px #c8c7c2, inset 0 1px 0 #9d9d9d;
 	box-shadow: 0 1px 1px #c8c7c2, inset 0 1px 0 #9d9d9d;
@@ -1153,7 +1132,7 @@ video {
 	background: rgba(164, 179, 87, 1) !important;
 }
 .cancel-button {
-	background: rgba(248, 80, 50, 1);
+	background: rgba(248, 80, 50, 1) !important;
 }
 .preview-button {
 	background: rgba(73, 155, 234, 1) !important;
@@ -1423,21 +1402,6 @@ ul.category label, ul.sub-category label {
 	.print-only {
 		display: none;
 	}
-	.is-unfave {
-		background: url("../img/togglestar.png");
-		background-position: 0 0;
-		background-size: 1em 2.8em;
-		background-repeat: no-repeat;
-		text-decoration: none;
-	}
-	.is-unfave:hover, .is-fave {
-		background-image: url("../img/togglestar.png");
-		background-position: 0 -1.4em;
-		background-repeat: no-repeat;
-		background-size: 1em 2.8em;
-		text-decoration: none;
-		border-bottom: 0 !important;
-	}
 }
 .invisible {
 	display: none !important;
@@ -1453,9 +1417,7 @@ ul.category label, ul.sub-category label {
 		margin: 0;
 		font-size: 90%;
 	}
-}{
-	display: none;
-	font-weight: normal !important;
+}
 }
 
 .menu-box li

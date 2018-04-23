@@ -27,6 +27,10 @@
    $('#toggle-navbar').click(function() {
      $(".navbar").toggle();
    });
+      
+   $('main').click(function() {
+     $(".navbar").hide();
+   });
 
 });
 

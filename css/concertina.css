@@ -19,12 +19,12 @@
 
 .is-open:after
 {
-	content: " -";
+	content: "⏷";
 }
 
 .is-closed:after
 {
-	content: " +";
+	content: "⏵";
 }
 
 .item
