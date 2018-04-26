@@ -1,5 +1,5 @@
-/**Carousel written by Assaf Gelber http://agelber.com/blog/looping-carousel/
- **********
+/*
+Carousel written by Assaf Gelber http://agelber.com/blog/looping-carousel/
 
  */
 

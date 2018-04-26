@@ -202,18 +202,18 @@
   <main>
    		<h2>Autocomplete</h2>
 		
-		
-			<h3>Example</h3>
-			<p>Enables users to quickly find and select from a pre-populated list of values as they type, using searching and filtering.</p>
+<!--	<div class="ui-widget">
+  <label for="choices">Fruit: </label>
+  <input id="choices"/>
+</div>-->
+    <p data-height="365" data-theme-id="0" data-slug-hash="aGZBJr" data-default-tab="js,result" data-user="vogelbeere" data-embed-version="2" data-pen-title="Autocomplete" class="codepen">See the Pen <a href="https://codepen.io/vogelbeere/pen/aGZBJr/">Autocomplete</a> by Yvonne Aburrow (<a href="https://codepen.io/vogelbeere">@vogelbeere</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 			
-			<div class="ui-widget">
-			  <label for="choices">Fruit: </label>
-			  <input id="choices"/>
-			</div>
-			<p>&nbsp;</p>
+			<p>Enables users to quickly find and select from a pre-populated list of values as they type, using searching and filtering.</p>
+   
 			<h3>Usage</h3>
 			<p>Autocomplete should be used whenever there is a really long list to be selected from. </p>
-			<p>If the list of choices needs explanatory notes, consider using the <a href="popup-lookup.php">popup lookup tool</a>.</p>
+			<p>If the list of choices needs explanatory notes, consider using the <a href="popup-lookup.html">popup lookup tool</a>.</p>
 		
   </main>
   <footer class="clearfix">
@@ -228,47 +228,46 @@
       <li><a href="portfolio.html">Portfolio</a></li>
     </ul>
   </footer>
-
+  <script>
+    $(function() {
+      var availableChoices = [
+        "Acai",
+        "Ackee",
+        "Apple",
+        "Avocado",
+        "Banana",
+        "Blackberry",
+        "Cherry",
+        "Durian",
+        "Elderberry",
+        "Gooseberry",
+        "Grape",
+        "Grapefruit",
+        "Guava",
+        "Mango",
+        "Papaya",
+        "Pawpaw",
+        "Peach",
+        "Persimmon",
+        "Plum",
+        "Raspberry",
+        "Sharon",
+        "Star",
+        "Strawberry",
+        "Tamarind",
+        "Tangerine"
+      ];
+      $( "#choices" ).autocomplete({
+        source: availableChoices
+      });
+    });
+  </script>
 	<script src="js/accordiontoggle.js"></script>
 	<script src="js/megamenu.js"></script>
 	<script src="js/lookup-popup.js"></script>
 	<script src="js/show-confirm.js"></script>
 	<script src="js/jquery.timeago.js"></script>
 	<script type="text/javascript" src="js/clockpicker-gh-pages/dist/jquery-clockpicker.min.js"></script>
-	
-<script>
-  $(function() {
-    var availableChoices = [
-      "Acai",
-      "Ackee",
-      "Apple",
-      "Avocado",
-      "Banana",
-      "Blackberry",
-      "Cherry",
-      "Durian",
-      "Elderberry",
-      "Gooseberry",
-      "Grape",
-      "Grapefruit",
-      "Guava",
-      "Mango",
-      "Papaya",
-      "Pawpaw",
-      "Peach",
-      "Persimmon",
-      "Plum",
-      "Raspberry",
-      "Sharon",
-      "Star",
-      "Strawberry",
-      "Tamarind",
-      "Tangerine"
-    ];
-    $( "#choices" ).autocomplete({
-      source: availableChoices
-    });
-  });
-  </script>
+
 </body>
 </html>

@@ -1,9 +1,4 @@
-
- #main,
- .col-right,
- .col-left
- {
-	height: 500px;
+
  }
  
  #cookies-enabled,
@@ -12,28 +7,15 @@
  #js-enabled
  {
 	height: 1.5em;
-	margin: 1em 0;
-	padding-left: 1.5em;
+	ng-left: 1.5em;
  }
  
  #my-browser,
  #my-ip,
  #my-language,
- #my-screenres
- {
-	height: 1.5em;
-	font-size: 120%;
- }
- 
-.is-enabled
- {
-	background: url('/library/img/true.png') no-repeat 0 0;
- }
- 
-.is-disabled
- {
-	background: url('/library/img/false.png') no-repeat 0 0;
- }
+ #my-screenr.5em;
+	font-size:after: 120content: " ✅"/img/true.png') no-:afterrepeacontent: " ❌"rary/img/false.png') no-repeat 0 0;
+ -block}
  
 .is-visible 
 {

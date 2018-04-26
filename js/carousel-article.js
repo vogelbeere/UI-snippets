@@ -1,5 +1,4 @@
-/** 
-rview: Carousel written by Assaf Gelber http://agelber.com/blog/looping-carou**********
+/**  Carousel written by Assaf Gelber http://agelber.com/blog/looping-carosel*
 
  */
 

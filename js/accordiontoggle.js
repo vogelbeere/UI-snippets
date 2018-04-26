@@ -80,31 +80,22 @@
 
 	/* select all checkboxes */
 	
-	/* select all checkboxes in Manage Users */
 
-	$('.checkall').change(function() 
-	{
+	$('.checkall').change(function() 	{
 	    var checkboxes = $('.category input');
-	    if($(this).is(':checked')) 
-	    {
+	    if($(this).is(':checked')) 	    {
 	        checkboxes.prop('checked', true);
-	    } 
-	    else
-	    {
+	    } else {
 	        checkboxes.prop('checked', false);
 	    }
 	});
     
     
-    $('.checknext').change(function() 
-    {
+    $('.checknext').change(function() {
 		var checkboxes = $(this).nextAll().eq(1).find(':checkbox');
-	    if($(this).is(':checked')) 
-	    {
+	    if($(this).is(':checked')) {
 	        checkboxes.prop('checked', true);
-	    } 
-	    else
-	    {
+	    } else {
 	        checkboxes.prop('checked', false);
 	    }
     });
