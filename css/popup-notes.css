@@ -1,0 +1,140 @@
+
+
+.my-notes
+{
+    display: none;
+    background-color: #fefabc !important;
+    padding: 0.5em;
+    margin: 20px auto;
+    width: 30%;
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+    left: 35.75%;
+    -webkit-box-shadow: 2px 2px 6px #888;
+    -moz-box-shadow: 2px 2px 6px #888;
+    box-shadow: 2px 2px 6px #888;
+    min-width: 20%;
+}
+
+
+.my-notes
+{
+	max-height: 90%;
+}
+
+
+
+.customer-notes h3,
+.support-form h3,
+.subhead
+{
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+
+.customer-notes textarea,
+.support-form textarea,
+.customer-notes input[type="text"],
+.support-form input[type="text"]
+{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.support-form textarea
+{
+	height: 260px;
+}
+
+.support-form p {
+    margin: 0 auto !important;
+}
+
+.add-message textarea {
+    margin: 0 auto !important;
+    width: 100%;
+    height: 12em;
+}
+
+.add-message p {
+    margin: 0 auto !important;
+    width: 100%;
+}
+
+.previous-message
+{
+	margin: 0.5em 0.75em 0.5em 0;
+	padding: 0.5em;
+	border-bottom: 1px dotted #404041;	
+}
+
+.subhead
+{
+	margin: 0.5em 0.75em;
+	padding: 0.5em;
+	font-style: italic;	
+}
+
+#char-num
+{
+	margin-left: 1em;
+}
+
+#save
+{
+	float: right;
+}
+
+.form-toolbar
+{
+	text-align: right;
+	padding-bottom: 0.25em;
+}
+
+.right
+{
+	float: right;
+}
+
+.toggle-customer-notes
+{
+	z-index: 2;
+}
+
+.overlay,
+.overlay2
+{
+	display: none;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0.7;
+	background: #333;
+}
+
+.is-error
+{
+	color: red;
+}
+
+ /*
+  * 3.0 dynamic classes
+  */
+
+/* 3.0.1 show/hide speech bubble (apply to .column1, .column2, .column3)  */
+
+.is-visible
+{
+	display: block;
+}
+
+.is-hidden
+{
+	display: none;
+}
+

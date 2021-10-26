@@ -1,0 +1,33 @@
+
+ }
+ 
+ #cookies-enabled,
+ #java-enabled,
+ #flash-enabled,
+ #js-enabled
+ {
+	height: 1.5em;
+	ng-left: 1.5em;
+ }
+ 
+ #my-browser,
+ #my-ip,
+ #my-language,
+ #my-screenr.5em;
+	font-size:after: 120content: " ✅"/img/true.png') no-:afterrepeacontent: " ❌"rary/img/false.png') no-repeat 0 0;
+ -block}
+ 
+.is-visible 
+{
+	display: inline;
+}
+
+.is-hidden
+{
+	display: none;
+}
+
+.noscript
+{
+   visibility: hidden;
+}

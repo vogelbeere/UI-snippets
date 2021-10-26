@@ -1,0 +1,22 @@
+
+
+/* a. print-only / do-not-print */
+
+.do-not-print, .navbar, nav, footer, .footer, .subnav, #demo, aside
+{
+	display: none;
+}
+
+/* b. Body styling */
+
+header
+{
+	
+	padding: 6px;
+	border-bottom: 1px solid #404041;
+}
+
+header, h1, h2, h3, h4, h5, p 
+{
+font-family: Calibri, Arial, Helvetica, sans-serif;
+}

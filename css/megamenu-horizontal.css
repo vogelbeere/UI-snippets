@@ -1,0 +1,258 @@
+
+ 
+/* menu elements */
+
+.navbar {
+	margin: 0;
+	padding: 0;
+}
+
+.megamenu {
+	width: 99%;
+    list-style: none;
+    margin: 0 auto;
+	padding: 0 1.25em;
+    height: 2em;
+	background-color: #eee;
+	color: #333;
+}
+
+.megamenu li.level1 {
+    float: left;
+    display: block;
+    position: relative;
+    padding: 0.25em 0.5em;
+    margin: 0.1em 0;
+}
+
+
+.megamenu a {
+	color: #333;
+}
+
+.subnav a[target="_blank"]:after {
+	padding: 0 0 0 3px;
+}
+
+main a[target="_blank"]:after {
+	padding: 0 0 0 3px;
+}
+
+.megamenu a:hover {
+	text-decoration: none;
+	background-color: #ccc;
+	color: #000;
+
+}
+
+.level1 a {
+	font-weight: bold;
+    padding: 4px;
+}
+
+.level1 {
+    border-right: 1px solid #ccc;
+}
+
+.level3 a {
+	font-weight: normal;
+	border-bottom: 0;
+	color: #333;
+	margin: 0;
+}
+
+.default .subnav a:hover {
+	background-color: #333;
+	color: aliceblue !important;
+}
+
+.level3 {
+	color: #000;
+	padding: 0;
+	margin-top: 0;
+}
+
+.subnav {
+    margin: 4px auto;
+    padding: 10px 5px 10px 5px;
+    box-shadow: 5px 5px 2px #969696;
+    position: absolute;
+    float: left;
+    left: -999em; /* Hides the drop down */
+    text-align: left;
+    border-top: none;
+	background-color: #ccc;
+	white-space: nowrap;
+	z-index: 99999;
+	clear: left;
+}
+
+.one-column {
+	width: 200px;
+}
+
+.two-columns {
+	width: 380px;
+}
+
+.three-columns {
+	width: 570px;
+}
+
+.four-columns {
+	width: 760px;
+}
+
+.navbar .column {
+    display: inline-block;
+    float: left;
+    position: relative;
+    margin: 5px;
+	width: 180px;
+}
+
+.left-column {
+	border-right: 2px groove #aaa;
+}
+
+.right-column {
+	border-left: 2px groove #aaa;
+	margin-left: 2px;
+}
+
+.subnav-heading {
+	font-weight: bold;
+	border-bottom: 2px groove #aaa;
+}
+
+.subnav li {
+	list-style: none;
+}
+
+.subnav p {
+	clear: both;
+}
+
+.subnav p a {
+	color: #000066;
+}
+
+.subnav a {
+	display: block;
+	margin: 0 1em;
+}
+
+.megamenu li:hover .subnav {
+    left: -1px;
+	top: auto;
+}
+
+/* dynamic classes */
+
+.is-active {
+	background-color: #ccc;
+	color: #000;
+}
+
+.is-inactive {
+	background-color: #eee;
+	color: #333;
+}
+
+.subnav .selected {
+	cursor: grab;
+}
+
+.chat {
+    width: 400px;
+}
+
+.helptext{
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #B2B2B2;
+    display: inline-block;
+    padding: 10px 18px;
+    position: absolute;
+	z-index:20;
+    vertical-align: top;
+	display: none;
+	width: 33%;
+}
+
+
+/* ribbon */
+
+
+/* The ribbons */
+
+.corner-ribbon{
+  width: 250px;
+  background: #e43;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: right;
+  padding: 0 2.5em 0 1.2em;
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  font-weight: bold;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Custom styles */
+
+.corner-ribbon.sticky{
+  position: fixed;
+}
+
+.corner-ribbon.shadow{
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+/* Position */
+
+.corner-ribbon.top-right {
+ top: 30px;
+  right: -60px;
+   left: auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* Colour */
+.corner-ribbon.green {
+background-color: aliceblue;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+.corner-ribbon a {
+	color: #222 !important;
+}
+.corner-ribbon a:hover {
+	background-color: transparent;
+	text-decoration: none;
+	color: #fff !important;
+}
+
+.corner-ribbon:hover {
+	color: #fff !important;
+	background-color: #1d9ad6 !important;
+}}
+.corner-ribbon a:hover
+{
+	background-color: transparent;
+	text-decoration: none;
+	color: #fff !important;
+}
+
+.corner-ribbon:hover
+{
+	color: #fff !important;
+	background-color: #1d9ad6 !important;
+}
+
+
